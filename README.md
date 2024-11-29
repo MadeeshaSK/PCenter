@@ -5,3 +5,8 @@ An e-commerce website for a PC and laptop shop, built using HTML, CSS, JavaScrip
 🔑 Features: Searching, sorting, login, registration. 
 🎯 My Role: Developed the login, registration, and contact pages. 
 🔄 Status: Development completed but not hosted; backend issues remain.
+
+other teammates,
+  Lasitha Hasaranga
+  Pabasara Fernando
+  Lakshan Roshana
