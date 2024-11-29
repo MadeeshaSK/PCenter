@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/contacts.css">
+<link rel="stylesheet" href="navbar/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<style>
+    
+    .navbar-container {
+        padding: 0 10%;
+    }
+
+    .green-circle {
+        width: 600px;
+        height: 600px;
+        background-color: #0EE897;
+        border-radius: 50%;
+        position: absolute; 
+        top: -370px; 
+        left: 930px;
+    }
+    .green-circlesecond {
+        width: 800px;
+        height: 800px;
+        background-color: #0EE897;
+        border-radius: 50%; 
+        position: absolute; 
+        top: 300px; 
+        left: -500px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    .green-circlethird{
+        width: 800px;
+        height: 800px;
+        background-color: #0EE897;
+        border-radius: 50%;
+        position: absolute; 
+        top: 850px; 
+        left: -700px;
+    
+    }
+    .green-circle4 {
+        width: 600px;
+        height: 600px;
+        background-color: #0EE897;
+        border-radius: 50%;
+        position: absolute; 
+        top: -200px; 
+        left: 1270px;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="navbar-container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="home.html"><img src="images/logo.png" alt="#" /></a>
+          </div>
+          <div class="link">
+            <div class="menu">
+              <nav>
+                <ul>
+                  <li><a href="home.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="buttons"></div>
+              <button class="button sign-in1" id="menubtn">Sign in</button>
+            </div>
+            <button class="button menu-btn" onclick="showDropdownMenu()">&#9776;</button>
+          </div>
+        <div class="dropdown-menu" id="dropdown-menu">
+          <nav>
+            <ul>
+              <li><a href="home.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+          <button class="button sign-in2" id="landing page 1">Sign in</button>
+        </div>
+      </div>
+    
+
+    <div class="full-container">
+        <div class="green-circle"></div>
+    <div class="green-circlesecond"></div>
+    <div class="green-circlethird"></div>
+    <div class="green-circle4"></div>
+    <div class="nav_bar" style="padding-bottom: 100px;"></div>
+    <div class="head">
+        <h1 style="font-size: 50px;"><b>Request a Call back</b></h1>
+        <p>Contact us for expert assistance with your laptop and computer needs.</p>
+    </div>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="text" id="mobile" name="mobile" placeholder="Your Mobile" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div class="map">
+        <h1>Find Us</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.7920910557764!2d79.8982920745404!3d6.79513291994813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae245416b7f34b5%3A0x7bd32721ab02560e!2sUniversity%20of%20Moratuwa!5e0!3m2!1sen!2slk!4v1714639370053!5m2!1sen!2slk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer"></div>
+    </div>
+    <script src="contacts.js"></script>
+
+    <footer class="footer_main">
+        <div class="footer_contain_1">
+            <div class="footer_content">
+                <div class="footer_detail">
+                    <img id="footer_logo" src="images/logo.png" alt="pcoint logo">
+                        <h1 id="d1">Buy your dream PC or Laptop</h1>
+                        <h2 id="d2">About</h2>
+                        <p id="p1">Welcome to our website, your ultimate destination for all things technology. 
+                            We are committed to providing you with the very best in computer parts, offering a perfect blend of quality,
+                            competitive pricing, and renowned brands.At our store, you'll find an extensive selection of premium brands, like INTEL, AMD, ASUS, and DELL in industry giants.</p>          
+                </div>
+                <div class="footer_detail">
+                    <div class="detail_content">
+                        <h2 id="d2">Branches</h2>
+                        <div class="Branches">
+                            <div class="b1">
+                                <h3 id="d3">Colombo</h3>
+                                <address>No 95, Gall Rd</address>
+                                <address>Dehiwala</address>
+                            </div>
+                            <div class="b1">
+                                <h3 id="d3">Galle</h3>
+                                <address>88/7,Kithulampitiya</address>
+                                <address>Galle</address>
+                            </div>
+                            
+                        </div>
+                        <h2 id="d2">Contact Us</h2>
+                        <div class="Contact_us">
+                            <a href="#">0772678223</a>
+                            <a href="#">0112231314</a>
+                            <a href="#">Pcenterofficial@gmail.com</a> 
+                        </div>
+                        
+                        <div class="Follow_Us">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="footer_detail">
+                    <div class="detail_content">
+                        <h2 id="d2">Quick Links</h2>
+                        <div class="Quick_links">
+                            <p>Home</p><p>Store</p><p>About</p><p>Contact</p>
+                        </div>
+                        <h2 id="d2">Services</h2>
+                        <div class="Services">
+                            <p>Product Sales</p>
+                            <p>Technical Support</p>
+                            <p>Repair and Maintenance</p>
+                            <p>Warranty and Returns</p>                          
+                        </div>
+                        
+                        <h2 id="d2">Opening Hours</h2>
+                        <div class="Opening_hours">
+                            <table class="Time_table">
+                                <tr>
+                                   <td><b>Monday - Friday</b></td>
+                                   <td><time>9.00 am - 5.00 pm</time></td> 
+                                </tr>
+                                <tr>
+                                    <td><b>Saturday</b></td>
+                                    <td><time>10.00 am - 3.00 pm</b></time></td> 
+                                 </tr>
+                                 <tr>
+                                    <td><b>Sunday</b></td>
+                                    <td><time>8.00 am - 2.00 pm</b></time></td> 
+                                 </tr>
+                            </table>
+                            
+                        </div>
+      
+                    </div>
+                </div>
+            </div>
+            
+        </div>    
+        <div class="footer_contain_2" style="background-color: rgba(14, 232, 151,0.9);">
+            <p>© 2024 Copyright: <a href="Pcenter.org">Pcenter.com</a></p>
+        </div>
+      </footer>
+      <script src="home.js"></script>
+</body>
+</html>
+

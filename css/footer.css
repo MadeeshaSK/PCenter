@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+}
+.footer_main{
+    background-color: #23262d;
+    width: 100% auto;
+    height: auto;
+}
+.footer_contain_1{
+    height: 90%;
+}
+.footer_content{
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_detail{
+    margin: 5px;
+    width: 33%;
+    height: 98%;
+    text-align: justify;
+    padding-right: 50px;
+}
+.detail_content{
+    width: 95%;
+    height: 100%;
+    float: left;
+}
+#footer_logo{
+    width: 100%;
+    margin: 20px 0px 0px;
+}
+#d1{
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#d2{
+    color: rgb(156, 149, 149);
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+}
+#d3{
+    color: #0ee897;
+    font-family:'Times New Roman', Times, serif;
+    margin: 5px 15px;
+}
+#p1{
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 18px;
+}
+.Contact_us{
+    margin: 0px 15px;
+}
+.Contact_us a{
+    text-decoration: none;
+    color: #0ee897;
+    display: block;
+    font-size: 18px;
+}
+.Services{
+    margin: 5px 15px;
+}
+.Services p{
+    margin: 0px;
+    color: aliceblue;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.Follow_Us{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.Follow_Us a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 25px;
+    border-radius: 100%;
+}
+.Follow_Us a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.Follow_Us a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.Follow_Us a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.Quick_links p{
+    display: inline;
+    padding-left: 5px;
+    padding-top: 10px;
+    margin: 5px;
+    color: #0ee897;
+    font-size: 18px;
+}
+.Branches address{
+    color: aliceblue;
+    margin: 0px 15px;
+    font-size: 18px;
+}
+.Opening_hours{
+    margin-top: 10px;
+}
+.Time_table{
+    border: none;
+    color: aliceblue;
+    margin: 0px 15px;
+    width: 75%;
+    font-size: 18px;
+}
+.Time_table tr{
+    height: 20px;
+}
+.footer_contain_2{
+    width: 100%;
+    padding-left: 40%;
+    padding-right: 10%;
+    height: 10%;
+}
+.footer_contain_2 p{
+    color: aliceblue;
+    margin:  0px;
+    padding: 10px;
+}
+.footer_contain_2 p a{
+    color: aliceblue;
+}
+@media (max-width:1470px){
+    .footer_contain_1 p,address,a{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .Time_table{
+        font-size: 16px;
+    }
+}
+@media (max-width:1320px){
+    .footer_contain_1 p,address,a{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .Time_table{
+        font-size: 14px;
+    }
+}
+@media (max-width:1150px){
+    h1{
+        font-size: 22px;
+    }
+    .footer_contain_1 p,address,a{
+        font-size: 12px;
+    }
+    .Follow_Us a{
+        padding: 8px;
+        margin: 20px;
+    }
+    .Time_table{
+        width: 80%;
+    }
+}
+@media (max-width:1040px){
+    .footer_contain_1 h2{
+        font-size: 18px;
+    }
+    .footer_contain_1 h1{
+        font-size: 19px;
+    }
+    .Time_table{
+        width: 90%;
+    }
+}
+@media (max-width:900px){
+    .footer_main{
+        background-color: #23262d;
+        width: 100%;
+        height: auto;
+    }
+    .footer_contain_1{
+        height: 90%;
+    }
+    .footer_content{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        display: grid;
+    }
+    .footer_detail{
+        margin: 5px auto;
+        width: 80%;
+        height: 98%;     
+    }
+    .footer_contain_1 h1{
+        font-size: 28px;
+    }
+    .footer_contain_1 h2{
+        font-size: 24px;
+    }
+    #p1{
+        font-size: 20px;
+    }
+    .detail_content{
+        width: 100%;
+    }
+    .Branches {
+        display: flex;
+    }
+    .b1{
+        width: 50%;
+    }
+    .Follow_Us a{
+        padding: 12px;
+        margin: 30px;
+    }
+    .Follow_Us a i{
+        font-size: 4em;
+    }
+    .Quick_links p{
+        margin-right: 25px;
+        font-size: 24px;
+    }
+    .Services p{
+        font-size: 24px;
+    }
+    .Time_table tr{
+        font-size: 22px;
+    }
+    .detail_content{
+        width: 95%;
+        height: 100%;
+        float: right;
+    }
+}
+@media (max-width:900px){
+    #footer_logo{
+        width: 100%;
+    }
+    #d1{
+        font-size: 18px;
+    }
+    #d2{
+        font-size: 18px;
+    }
+}

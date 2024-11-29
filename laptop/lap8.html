@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/landing.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+<title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="home.html"><img src="../images/logo.png" alt="#" /></a>
+          </div>
+          <div class="link">
+            <div class="menu">
+              <nav>
+                <ul>
+                  <li><a href="home.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="buttons">
+              <button class="button sign-in1" id="menubtn">Sign in</button>
+            </div>
+          </div>
+          <button class="button menu-btn" onclick="showDropdownMenu()">&#9776;</button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+            <button class="button sign-in2" id="landing page 1">Sign in</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="product-container">
+            <div class="product-images">
+                <img id="sliderImage" src="../images/store/rog/1.png" alt="Slide">
+                <div class="product-slideshow-buttons">
+                    <button id="slides" onclick="slideChange(7,0)"></button>
+                    <button id="slides" onclick="slideChange(7,1)"></button>
+                    <button id="slides" onclick="slideChange(7,2)"></button>
+                    <button id="slides" onclick="slideChange(7,3)"></button>
+                </div>
+            </div>
+            <div class="product-description">
+                <img src="../images/store/rog_logo.png" class="brandlogo">
+                <div class="title">ROG Zephyrus G15 Ryzen™ 9 6900HX + RTX™ 3080</div>
+                <div class="availability">Available</div>
+                <hr>
+                <div class="price">M.R.P <b>Rs.<span>456 000.00</span></b></div>
+                <div class="installments">
+                    <img src="../images/store/icon1.png" class="icon-instalments">
+                    <div class="installments-description">Installments Available</div>
+                </div>
+                <div class="horizontal-divider"></div> <br><br>               
+                <button class="buy-button" id="buynow">Buy Now</button>
+                <hr>
+                <div class="delivery">
+                    <img src="../images/store/icon2.png" class="icon-delivery">
+                    <div class="delivery-description">Delivery - Standard 3 To 5 Working Days.</div>
+                </div>
+                <div class="waranty">
+                    <img src="../images/store/icon3.png" class="icon-waranty">                  
+                    <div class="waranty-description">2 Years(s) Manufacturer Warranty.</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-description2">
+            <img src="../images/store/msi_logo.png" class="brandlogo">
+            <h3>ROG Zephyrus G15 Ryzen™ 9 6900HX + RTX™ 3080</h3>
+            <div class="availability">Available</div>
+            <hr>
+            <div class="price">M.R.P <b>Rs.<span>456 000.00</span></b></div>
+            <div class="installments">
+                <img src="../images/store/icon1.png" class="icon-instalments">
+                <div class="installments-description">Installments Available</div>
+                
+            </div>
+            <div class="horizontal-divider"></div> <br><br>               
+            <button class="buy-button" id="buynow">Buy Now</button>
+            <hr>
+            <div class="delivery">
+                <img src="../images/store/icon2.png" class="icon-delivery">
+                <div class="delivery-description">Delivery - Standard 3 To 5 Working Days.</div>
+            </div>
+            <div class="waranty">
+                <img src="../images/store/icon3.png" class="icon-waranty">                  
+                <div class="waranty-description">2 Years(s) Manufacturer Warranty.</div>
+            </div>
+        </div>
+        <div class="specification">
+            <div class="spec-title">Specification</div>
+            <div>
+                <table>
+                    <tr>
+                        <th>Model</th>
+                        <td>ROG Zephyrus G15 Ryzen™ 9 6900HX + RTX™ 3080</td>
+                    </tr>
+                    <tr>
+                        <th>Generation</th>
+                        <td>9th Generation</td>
+                    </tr>
+                    <tr>
+                        <th>Processor</th>
+                        <td>AMD Ryzen™ 9 6900HX Mobile Processor (8-core/16-thread, 20MB cache, up to 4.9 GHz max boost)</td>
+                    </tr>
+                    <tr>
+                        <th>Graphic</th>
+                        <td>NVIDIA® GeForce RTX™ 3080</td>
+                    </tr>
+                    <tr>
+                        <th>Graphic Memory</th>
+                        <td>8GB GDDR6</td>
+                    </tr>
+                    <tr>
+                        <th>Storage</th>
+                        <td>1TB M.2 NVMe™ PCIe® 4.0 SSD</td>
+                    </tr>
+                    <tr>
+                        <th>Display</th>
+                        <td>15.6-inch FHD (1920 x 1080) 16:9 300Hz</td>
+                    </tr>
+                    <tr>
+                        <th>Memory</th>
+                        <td>16G DDR5-4800 SO-DIMM x 2</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../landing.js"></script>
+    <script src="../navbar.js"></script>
+</body>
+</html>

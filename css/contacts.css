@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.head {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.head h1,
+p {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    background-image: url('../images/form_bg.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+
+}
+
+.contact-form {
+    padding: 50px;
+    width: 50%;
+    padding-bottom: 70px;
+}
+
+.contact-form h2 {
+    color: #ccc;
+}
+
+.contact-form h2:hover {
+    color: white;
+    text-decoration: double;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border: 1px solid #0ee897;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0ee897;
+}
+
+.map {
+    width: 100%;
+    text-align: center;
+    padding: 100px 50px;
+}
+.map iframe {
+    width: 80%;
+}
+.map h1 {
+    font-family: "Raleway", sans-serif;
+    padding: 10px;
+    font-size: 50px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .body {
+        overflow-x: hidden;
+    }
+    .container {
+        width: 70%;
+    }
+
+    .contact-form {
+        width: 60%;
+    }
+
+    .map {
+        padding: 50px 30px;
+    }
+    .map iframe {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .body {
+        overflow-x: hidden;
+    }
+    .container {
+        width: 80%;
+    }
+
+    .contact-form {
+        width: 70%;
+    }
+
+    .map {
+        padding: 50px 20px;
+    }
+    .map iframe {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        overflow-x: hidden;
+    }
+    .container {
+        width: 90%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .map {
+        padding: 50px 10px;
+    }
+    .map iframe {
+        width: 50%;
+    }
+    
+}

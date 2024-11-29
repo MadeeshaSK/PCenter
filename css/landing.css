@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap');
+
+* {
+    margin-top: 10px;
+}
+
+/* navbar specification */
+.menu li a, .dropdown-menu li a  {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.sign-in1:hover, .sign-in2:hover {
+    color: #0EE897;
+}
+
+/* end of navbar specification */
+body {
+    color: #000000;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.25;
+    font-weight: normal;
+}
+
+
+.title {
+    font-size: 22px;
+}
+
+.container {
+    margin: 0%;
+    padding: 0 25px;
+} 
+
+.product-container {
+    width: 100%;
+    height: 800px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/*begining of product images*/
+
+.product-images {
+    width: 50%;
+    height: 80%;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.product-images img {
+    height: 70%;
+    border: 10px solid #0EE897;
+    border-radius: 15px;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5); 
+}
+
+.product-slideshow-buttons button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(173, 173, 173);
+    transition: background-color 2s, ;
+}
+
+.product-slideshow-buttons button:hover {
+    width: 35px;
+    background-color: #0EE897;
+    border-radius: 25px;
+}
+
+/*end of product images*/
+
+/*begining of product description*/
+
+.product-description, .product-description2 {
+    width: 40%;
+    display: flex;
+    padding-right: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.brandlogo {
+    width: 25%;
+}
+
+.availability {
+    padding: 5px 30px;
+    background-color: #0EE897;
+    border-radius: 20px;
+}
+
+.price {
+    font-size: 23px;
+}
+
+.price b {
+    font-size: 28px;
+}
+
+.installments, .delivery, .waranty {
+    width: 90%;
+    height: 100px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: flex-start;
+
+}
+.installments img {
+    margin-right: 30px;
+    height: 60%;
+}
+
+.delivery img, .waranty img {
+    margin-right: 30px;
+    height: 80%;
+}
+
+.installments-description {
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.delivery-description {
+    margin-right: 30px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.waranty-description {
+    margin-right: 30px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.installments a{
+    padding: 8px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.installments a:hover{
+    color: #0EE897;
+}
+
+.horizontal-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+
+.buy-button {
+    padding: 20px 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0EE897;
+}
+/*end of product description*/
+
+/*start of specification*/
+
+.specification {
+    padding: 10px 50px;
+    background-color: #0EE897;
+    border-radius: 10px;
+}
+
+.spec-title {
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 27px;
+    padding-bottom: 25px;
+}
+
+.specification table {
+    text-align: left;
+}
+
+.specification th {
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.product-description2 {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    body {
+        width: 100%;
+    }
+    .product-container {
+        height: fit-content;
+        justify-content: center;
+    }
+    .product-description {
+        display: none;
+    }
+    .product-description2 {
+        display: flex;
+        width: fit-content;
+        margin-bottom: 50px;
+        padding-right: 0;
+    }
+    .product-images img{
+        width: 100%;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .buy-button {
+        padding: 15px 29px;
+        font-size: 19px;
+    }
+
+}

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/SStyle.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <title>Store</title>
+</head>
+<body>
+  <div class="navbar-container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/logo.png" alt="#" /></a>
+      </div>
+      <div class="link">
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="home.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="buttons"></div>
+          <button class="button sign-in1" id="menubtn">Sign in</button>
+        </div>
+        <button class="button menu-btn" onclick="showDropdownMenu()">&#9776;</button>
+      </div>
+    <div class="dropdown-menu" id="dropdown-menu">
+      <nav>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+      <button class="button sign-in2" id="landing page 1">Sign in</button>
+    </div>
+  </div>
+
+    <div class="Store">
+        <div class="filter">
+          <div class="selection">
+            <a href="#"><button style="background-color: #0ee897; color: aliceblue;font-size: 30px;">Laptops</button></a>
+            <a href="Store(desktop).html"><button>Desktops</button></a>
+          </div>
+            <form class="Filter-by">
+                <h1>Laptops</h1>
+                <p class="p-title">Price</p>
+
+
+                
+                <p class="range-slider">
+                    <input type="range" class="Range-min" step="100" min="154650" max="292550" value="154650" >
+                    <input type="range" class="Range-max" step="100" min="154650" max="292550" value="292550" >
+                </p>
+                <p class="Range-position">
+                    <span class="Rangr-value">Rs</span>
+                    <span class="Range-values-min">200,000</span>
+                    <span class="Range-values-suffix"></span> - 
+                    <span class="Rrange-values-prefix">Rs</span>
+                    <span class="Range-values-max">1,600,000</span>
+                    <span class="Range-values-suffix"></span>
+                </p>
+            
+                <hr style="width:95%">
+                <div class="brand">
+                    <p class="p-title">Brand</p>
+
+                  <label class="container" >ACER
+                    <input type="checkbox" class="filter-checkbox brand" value="acer">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">ASUS
+                    <input type="checkbox" class="filter-checkbox brand" value="asus">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">GIGABYTE
+                    <input type="checkbox" class="filter-checkbox brand" value="gigabyte">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">HP
+                    <input type="checkbox" class="filter-checkbox brand" value="hp">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">LENOVO
+                    <input type="checkbox" class="filter-checkbox brand" value="lenovo">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">MSI
+                    <input type="checkbox" class="filter-checkbox brand" value="msi"> 
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+                
+                <hr style="width:95%">
+                <div class="s_size">
+                    <p class="p-title">Screen Size</p>
+                  <label class="container">14 Inches
+                    <input type="checkbox" class="filter-checkbox screen-size" value="14">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">15 Inches
+                    <input type="checkbox" class="filter-checkbox screen-size" value="15">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">16 Inches
+                    <input type="checkbox" class="filter-checkbox screen-size" value="16">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                
+                <hr style="width:95%">
+                <div class="processor">
+                    <p class="p-title">Processor</p>
+                  <label class="container">INTEL CORE I5
+                    <input type="checkbox" class="filter-checkbox processor" value="intel_i5">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">INTEL CORE I7
+                    <input type="checkbox" class="filter-checkbox processor" value="intel_i7">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">INTEL CORE I9
+                    <input type="checkbox" class="filter-checkbox processor" value="intel_i9">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">AMD RYZEN 7
+                    <input type="checkbox" class="filter-checkbox processor" value="amd_ryzen7">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">AMD RYZEN 9
+                    <input type="checkbox" class="filter-checkbox processor" value="amd_ryzen9">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <hr style="width:95%">
+                <div class="processor">
+                    <p class="p-title">RAM</p>
+                  <label class="container">8GB
+                    <input type="checkbox" class="filter-checkbox ram" value="8">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">16GB
+                    <input type="checkbox" class="filter-checkbox ram" value="16">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">32GB
+                    <input type="checkbox" class="filter-checkbox ram" value="32">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">64GB
+                    <input type="checkbox" class="filter-checkbox ram" value="64">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="store_details">
+            <div class="Products" id="products">
+                  <a href="landing.html"><div class="pr_details product" id="1" data-brand="asus" data-screen-size="15" data-processor="amd_ryzen9" data-ram="16">
+                       <div class="Lap-details">
+                           <img src="images/store/rog/1.png" alt="lap-img" class="lap-img">
+                           <p id="L1">ROG Strik G15</p>
+                           <hr style="width:95%">
+                           <p id="L2">Windows 11 Pro|AMD Ryzen™ 9|NVIDIA® GeForce RTX™ 3080 Laptop GPU
+                            |15.6-inch,16:9|16GB DDR5|1TB M.2 NVMe
+                           </p>
+                       </div>
+                       <div class="Lap-tag">
+                           <h3>Rs. 368,000</h3>
+                       </div>
+                  </div></a>
+           
+                   
+                  <div class="pr_details product" id="2" data-brand="asus" data-screen-size="15" data-processor="intel_i5" data-ram="16">
+                    <div class="Lap-details">
+                        <img src="images/store/asus/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">ASUS TUF gaming F15</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 Home|1Intel® Core™ i5-10300H Processor|15.6-inch|
+                          NVIDIA® GeForce GTX™ 1650, 16GB GDDR5|512GB PCIe® 3.0 NVMe™ M.2
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 312,000</h3>
+                    </div>
+                  </div>
+                  
+                   <div class="pr_details product" id="3" data-brand="asus" data-screen-size="15" data-processor="intel_i9" data-ram="32">
+                    <div class="Lap-details">
+                        <img src="images/store/rog2/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">ROG Strix SCAR 16</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 Pro|Intel® Core™ i9 Processor 14900HX|15.6-inch|
+                          NVIDIA® GeForce RTX™ 4080 Laptop GPU|32GB DDR5|2TB + 2TB PCIe® 4.0 NVMe™ M.2
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 1,580,000</h3>
+                    </div>
+                  </div>
+                   
+                  <div class="pr_details product" id="4" data-brand="asus" data-screen-size="16" data-processor="intel_i7" data-ram="16">
+                    <div class="Lap-details">
+                        <img src="images/store/rpg3/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">ROG Zephyrus G16</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 Pro|Intel® Core™ i7-13620H|16:10(1920 x 1200)|
+                          NVIDIA® GeForce RTX 4060 8GB GDDR6|16GB DDR4|512GB M.2 GEN4 NVME
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 460,000</h3>
+                    </div>
+                  </div>
+                   
+                   <div class="pr_details product" id="5" data-brand="acer" data-screen-size="16" data-processor="intel_i7" data-ram="16">
+                    <div class="Lap-details">
+                        <img src="images/store/acer/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">Acer PREDATOR HELIOS NEO 16</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 Home|Intel® Core™ i7-13700HX|16 Inches|
+                          NVIDIA® GeForce RTX 4060 8GB GDDR6|16GB DDR5|1TB GEN4 NVME M.2
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 500,000</h3>
+                    </div>
+                  </div>
+                  
+                  <div class="pr_details product" id="6" data-brand="msi" data-screen-size="16" data-processor="intel_i7" data-ram="32">
+                    <div class="Lap-details">
+                        <img src="images/store/msi2/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">MSI CREATOR M16</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 Home|Intel® Core™ i7 processor 14700HX|16 Inches(2560x 1600)|
+                          NVIDIA® GeForce RTX 4060 8GB GDDR6|32GB DDR5|1TB M.2 GEN4 NVME
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 621,000</h3>
+                    </div>
+                  </div>
+                  <div class="pr_details product" id="7" data-brand="gigabyte" data-screen-size="15" data-processor="intel_i5" data-ram="8">
+                    <div class="Lap-details">
+                        <img src="images/store/gigabyte/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">GIGABYTE G5 KF</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 Home|Intel® Core™ i5-12500H|15.6|
+                          NVIDIA® GeForce RTX 4060 8GB GDDR6|8GB DDR4|512GB GEN4 NVME M.2
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 380,000</h3>
+                    </div>
+                  </div>
+                  <div class="pr_details product" id="8" data-brand="asus" data-screen-size="14" data-processor="intel_i5" data-ram="8">
+                    <div class="Lap-details">
+                        <img src="images/store/zenbook/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">ASUS Zenbook 14X</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 Home|Intel® EVO Core™ i5-13500H|14.5-inch|
+                          Intel Iris XE Graphics|8GB LPDDR5|512GB GEN4 NVME M.2
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 244,000</h3>
+                    </div>
+                  </div>
+                  <div class="pr_details product" id="9" data-brand="msi" data-screen-size="15" data-processor="intel_i7" data-ram="32">
+                    <div class="Lap-details">
+                        <img src="images/store/msi/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">MSI GL63 9SDK</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 pro|Intel® Core™ i7 Processor|15.6" FHD (1920x1080)|
+                          NVIDIA® GeForce® GTX 1660 6GB|32GB DDR4|1TB M.2 SSD
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 304,000</h3>
+                    </div>
+                  </div>
+                  <div class="pr_details product" id="10" data-brand="asus" data-screen-size="15" data-processor="amd_ryzen7" data-ram="8">
+                    <div class="Lap-details">
+                        <img src="images/store/vivobook/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">ASUS Vivobook Go 15</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 Home|AMD Ryzen 7 6520U|15.6 Inches|
+                          AMD Radeon Graphics|8GB LPDDR5|512GB M.2 NVME
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 250,000</h3>
+                    </div>
+                  </div>
+                  <div class="pr_details product" id="11" data-brand="lenovo" data-screen-size="15" data-processor="intel_i5" data-ram="16">
+                    <div class="Lap-details">
+                        <img src="images/store/lenevo/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">Lenovo LOQ 15IRH8</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 Home|Intel® Core™ i5-13420H|15.6 FHD (1920x1080)|
+                          NVIDIA RTX™ 3050 6GB GDDR6|16GB DDR5|512GB SSD NVMe
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 305,000</h3>
+                    </div>
+                  </div>
+                  <div class="pr_details product" id="12" data-brand="hp" data-screen-size="15" data-processor="intel_i5" data-ram="8">
+                    <div class="Lap-details">
+                        <img src="images/store/hp/1.png" alt="Lap img" class="lap-img">
+                        <p id="L1">HP 15S</p>
+                        <hr style="width:95%">
+                        <p id="L2">Windows 11 Home|Intel® Core™ i5-1135G7|15.6 HD LED|
+                          Intel® Iris® XE Graphics|8GB DDR4|512GB NVME SSD
+                        </p>
+                    </div>
+                    <div class="Lap-tag">
+                        <h3>Rs. 159,000</h3>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div> 
+      <script src="home.js"></script>
+    <script>
+          // Add event listeners to checkboxes
+          var checkboxes = document.getElementsByClassName("filter-checkbox");
+          for (var i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].addEventListener("change", function() {
+              filterProducts();
+            });
+          }
+
+          // Filter products based on selected criteria
+          function filterProducts() {
+            var selectedBrands = getSelectedValues("brand");
+            var selectedScreenSizes = getSelectedValues("screen-size");
+            var selectedProcessors = getSelectedValues("processor");
+            var selectedRAMs = getSelectedValues("ram");
+
+            var products = document.getElementsByClassName("product");
+            for (var i = 0; i < products.length; i++) {
+              var product = products[i];
+              var brand = product.getAttribute("data-brand");
+              var screenSize = parseInt(product.getAttribute("data-screen-size"));
+              var processor = product.getAttribute("data-processor");
+              var ram = parseInt(product.getAttribute("data-ram"));
+
+              var brandMatch = selectedBrands.length === 0 || selectedBrands.includes(brand);
+              var screenSizeMatch = selectedScreenSizes.length === 0 || selectedScreenSizes.includes(screenSize.toString());
+              var processorMatch = selectedProcessors.length === 0 || selectedProcessors.includes(processor);
+              var ramMatch = selectedRAMs.length === 0 || selectedRAMs.includes(ram.toString());
+
+              if (brandMatch && screenSizeMatch && processorMatch && ramMatch) {
+                product.style.display = "block";
+              } else {
+                product.style.display = "none";
+              }
+
+            }
+          }
+
+          // Helper function to get selected values of a given category
+          function getSelectedValues(category) {
+            var selectedValues = [];
+            var checkboxes = document.getElementsByClassName("filter-checkbox " + category);
+            for (var i = 0; i < checkboxes.length; i++) {
+              if (checkboxes[i].checked) {
+                selectedValues.push(checkboxes[i].value);
+              }
+            }
+            return selectedValues;
+          }
+          
+    </script>
+
+  <footer class="footer_main">
+  <div class="footer_contain_1">
+      <div class="footer_content">
+          <div class="footer_detail">
+              <img id="footer_logo" src="images/logo.png" alt="pcoint logo">
+                  <h1 id="d1">Buy your dream PC or Laptop</h1>
+                  <h2 id="d2">About</h2>
+                  <p id="p1">Welcome to our website, your ultimate destination for all things technology. 
+                      We are committed to providing you with the very best in computer parts, offering a perfect blend of quality,
+                      competitive pricing, and renowned brands.At our store, you'll find an extensive selection of premium brands, like INTEL, AMD, ASUS, and DELL in industry giants.</p>          
+          </div>
+          <div class="footer_detail">
+              <div class="detail_content">
+                  <h2 id="d2">Branches</h2>
+                  <div class="Branches">
+                      <div class="b1">
+                          <h3 id="d3">Colombo</h3>
+                          <address>No 95, Gall Rd</address>
+                          <address>Dehiwala</address>
+                      </div>
+                      <div class="b1">
+                          <h3 id="d3">Galle</h3>
+                          <address>88/7,Kithulampitiya</address>
+                          <address>Galle</address>
+                      </div>
+                      
+                  </div>
+                  <h2 id="d2">Contact Us</h2>
+                  <div class="Contact_us">
+                      <a href="#">0772678223</a>
+                      <a href="#">0112231314</a>
+                      <a href="#">Pcenterofficial@gmail.com</a> 
+                  </div>
+                  
+                  <div class="Follow_Us">
+                      <a href=""><i class="fa-brands fa-facebook"></i></a>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                      <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                  </div>
+              </div>
+              
+              
+          </div>
+          <div class="footer_detail">
+              <div class="detail_content">
+                  <h2 id="d2">Quick Links</h2>
+                  <div class="Quick_links">
+                      <p>Home</p><p>Store</p><p>About</p><p>Contact</p>
+                  </div>
+                  <h2 id="d2">Services</h2>
+                  <div class="Services">
+                      <p>Product Sales</p>
+                      <p>Technical Support</p>
+                      <p>Repair and Maintenance</p>
+                      <p>Warranty and Returns</p>                          
+                  </div>
+                  
+                  <h2 id="d2">Opening Hours</h2>
+                  <div class="Opening_hours">
+                      <table class="Time_table">
+                          <tr>
+                             <td><b>Monday - Friday</b></td>
+                             <td><time>9.00 am - 5.00 pm</time></td> 
+                          </tr>
+                          <tr>
+                              <td><b>Saturday</b></td>
+                              <td><time>10.00 am - 3.00 pm</b></time></td> 
+                           </tr>
+                           <tr>
+                              <td><b>Sunday</b></td>
+                              <td><time>8.00 am - 2.00 pm</b></time></td> 
+                           </tr>
+                      </table>
+                      
+                  </div>
+
+              </div>
+          </div>
+      </div>
+      
+  </div>    
+  <div class="footer_contain_2" style="background-color: rgba(14, 232, 151,0.9);">
+      <p>© 2024 Copyright: <a href="Pcenter.org">Pcenter.com</a></p>
+  </div>
+</footer>
+</body>
+</html>

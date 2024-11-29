@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap');
+
+* {
+    margin-top: 10px;
+}
+
+/* navbar specification */
+
+.menu li a, .dropdown-menu li a  {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.sign-in1:hover, .sign-in2:hover {
+    color: #0EE897;
+}
+
+/* end of navbar specification */
+
+body {
+    color: #666666;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.25;
+    font-weight: normal;
+}
+
+
+.box-container {
+    width: 58%;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background-color: #0EE897;
+    border-radius: 500px 0 0 500px;
+    z-index: -1;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    width: 700px;
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
+
+.slide img {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 8%;
+    
+}
+
+.button {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 35px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.banner {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.title-text h1{
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 74px;
+    color: rgb(0, 0, 0);
+}
+
+.title-text h3{
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: -20px;
+}
+
+.title-text h2{
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 56px;
+    color: #0EE897;
+}
+
+.buy-now{
+    padding: 25px 60px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, border-radius 0.5s;
+}
+
+.buy-now:hover {
+    background-color: #0EE897;
+    border-radius: 35px;
+}
+
+
+
+.count-btn {
+    width: 75px;
+    height: 75px;
+    border: 10px solid #0EE897;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 21px;
+    font-family: 'Baloo Chettan', cursive;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    left: -20px;
+    z-index: 2;
+}
+
+.mobilebox{
+    display: none;
+    height: fit-content;
+    background-color: #0EE897;
+}
+
+.mobileslide {
+    display: none;
+}
+  
+
+
+
+.sign-in1:hover, .sign-in2:hover {
+    color: #0EE897;
+}
+
+
+
+.navbar-container {
+    margin: 0 auto 10px 0;
+}
+
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+
+.link {
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    padding-right: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+.menu li:last-child, .dropdown-menu li:last-child  {
+    margin-right: 0;
+}
+
+.menu li a, .dropdown-menu li a  {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover, .dropdown-menu li a:hover {
+    color: #000000;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 35px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.dropdown-menu{
+    width: 100%;
+    height: 260px;
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #0EE897;
+}
+
+.sign-in2 {
+    margin-right: 20px;  
+    margin-top: 20px;  
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+}
+
+.dropdown-menu li {
+    margin-bottom: 30px;
+} 
+
+
+@media (max-width: 900px) {
+
+    body {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .box-container {
+        position: relative;
+        display: none;
+    }
+
+    .mobilebox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileslide {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+   .mobileslide img {
+        width: 100%;
+   }
+
+   .banner {
+    width: 100%;
+   }
+   
+   .title-text {
+        display: inline;
+        width: 100%;
+   }
+
+   .break {
+        display: none;
+   } 
+
+   .title-text h1{
+        font-size: 50px;
+   }
+   .buy-now {
+        padding: 17px 40px;
+   }
+
+   .logo img{
+        width: 170px;
+   }
+
+   .button {
+    padding: 10px 35px;
+   }
+
+   .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.link {
+    display: none;
+}
+
+.logo img{
+    width: 170px;
+}
+
+.menu.show {
+    display: flex;
+}
+
+.menu-btn {
+    display: inline-block;
+}
+
+.sign-in1 {
+    display: none;
+}
+
+.navbar-container {
+    padding: 0 0;
+    margin: 0;
+}
+
+.logo img{
+    width: 200px;
+}
+}
+
+@media (max-width: 1200px){
+    .box{
+        border-radius: 0%;
+    }
+    .box-container {
+        width: 50%;
+    }
+
+    .menu {
+        padding-right: 20px;
+    }
+    .menu li{
+        margin-right: 20px;
+    }
+}
+
+
